@@ -4,7 +4,6 @@ import { getCustomRepository } from 'typeorm';
 import { SurveysUsersRepository } from '../repositories/SurveysUsersRepository';
 
 class AnswerController {
-  // http://localhost:3333/answers/10?u=8d0c75e4-073a-430c-ba18-09f4c6376451
   async execute(request: Request, response: Response) {
     const { value } = request.params;
     const { u } = request.query;
