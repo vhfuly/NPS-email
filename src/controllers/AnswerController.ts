@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { getCustomRepository } from 'typeorm';
 
 import { SurveysUsersRepository } from '../repositories/SurveysUsersRepository';
+import { AppError } from '../errors/AppError';
 
 class AnswerController {
   async execute(request: Request, response: Response) {
@@ -15,15 +16,11 @@ class AnswerController {
     });
 
     if(!surveyUser) {
-      return response.status(400).json({
-        error: 'SurveyUser does not exists!'
-      })
+      throw new AppError('SurveyUser does not exists!');
     }
 
     if(surveyUser.value) {
-      return response.status(400).json({
-        error: 'Cannot vote again!'
-      })
+      throw new AppError('Cannot vote again!');
     }
 
     surveyUser.value = Number(value);
