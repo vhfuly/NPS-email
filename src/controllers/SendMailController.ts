@@ -9,7 +9,6 @@ import { SurveysUsersRepository } from '../repositories/SurveysUsersRepository';
 import SendMailService from '../services/SendMailService';
 import { AppError } from '../errors/AppError';
 
-
 class SendMailController {
   async execute(request: Request, response: Response) {
     const { email, survey_id } =request.body;

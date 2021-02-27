@@ -1,8 +1,8 @@
 import { Column, CreateDateColumn, Entity, PrimaryColumn, ManyToOne, JoinColumn } from 'typeorm';
 import { v4 as uuid } from 'uuid';
+
 import { User } from './User';
 import { Survey } from './Survey';
-
 
 @Entity('surveys_users')
 class SurveyUser {
