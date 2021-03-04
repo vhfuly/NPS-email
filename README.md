@@ -36,7 +36,7 @@ To execute it is very simple
 <a href="https://victor-fuly.netlify.app/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/62678105?s=460&u=c48758f0a65849d22ad11d196ab5f6e00fcedd0d&v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Victor Fult</b></sub>
+ <sub><b>Victor Fuly</b></sub>
 
 
 With ❤️ por Victor Fuly 👋🏽 
